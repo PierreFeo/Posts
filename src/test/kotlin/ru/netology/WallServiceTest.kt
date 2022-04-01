@@ -8,7 +8,7 @@ class WallServiceTest {
     fun updatePostTrue() {
 
         val service = WallService()
-        // заполняем несколькими постами
+
         service.add(
             Post(
                 1,
@@ -66,7 +66,7 @@ class WallServiceTest {
             )
         )
 
-        // создаём информацию об обновлении
+
         val update = Post(
             id = 3,
             ownerId = 2,
@@ -94,10 +94,10 @@ class WallServiceTest {
             postponedId = 3
         )
 
-        // выполняем целевое действие
+
         val result = service.update(update)
         result
-        // проверяем результат (используйте assertTrue или assertFalse)
+
         assertFalse(result)
     }
 
@@ -106,7 +106,7 @@ class WallServiceTest {
     fun updatePostFalse() {
 
         val service = WallService()
-        // заполняем несколькими постами
+
         service.add(
             Post(
                 1,
@@ -164,7 +164,7 @@ class WallServiceTest {
             )
         )
 
-        // создаём информацию об обновлении
+
         val update = Post(
             id = 3,
             ownerId = 2,
@@ -192,11 +192,11 @@ class WallServiceTest {
             postponedId = 3
         )
 
-        // выполняем целевое действие
+
         val result = service.update(update)
         result
-        // проверяем результат (используйте assertTrue или assertFalse)
-        assertFalse(result)
+
+        assertTrue(result)
     }
 
     @Test
