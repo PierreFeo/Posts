@@ -68,7 +68,7 @@ class WallServiceTest {
 
 
         val update = Post(
-            id = 3,
+            id = 1,
             ownerId = 2,
             fromId = 12,
             createdBy = 6,
@@ -98,7 +98,7 @@ class WallServiceTest {
         val result = service.update(update)
         result
 
-        assertFalse(result)
+        assertTrue(result)
     }
 
 
