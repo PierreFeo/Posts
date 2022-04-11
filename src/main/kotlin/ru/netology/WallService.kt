@@ -1,5 +1,6 @@
 package ru.netology
 
+import ru.netology.data.attachment.Attachment
 import ru.netology.data.post.Post
 
 internal class WallService {

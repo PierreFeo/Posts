@@ -1,5 +1,6 @@
 package ru.netology.data.post
 import ru.netology.Donut
+import ru.netology.data.attachment.Attachment
 
 internal data class Post(
     val id: Int = 0,
@@ -26,4 +27,5 @@ internal data class Post(
     val isFavorite: Boolean? = null,
     val donut: Donut? = null,
     val postponedId: Int? = null,
+    var arrayAttachments: Array<Attachment> = emptyArray()
 )
