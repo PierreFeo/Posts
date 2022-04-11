@@ -2,8 +2,8 @@ package ru.netology
 
 import ru.netology.data.attachment.Audio
 import ru.netology.data.attachment.AudioAttachment
+import ru.netology.data.comments.Comment
 import ru.netology.data.post.Post
-
 
 fun main() {
     val wllService = WallService()
@@ -14,4 +14,7 @@ fun main() {
     println(wllService.add(post))
 
     println(wllService.update(newPost))
+
+    val comment = Comment(1, 3, "гневный коментарий")
+    println(wllService.createComment(comment))
 }
